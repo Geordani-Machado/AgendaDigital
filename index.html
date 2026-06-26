@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrada Digital</title>
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS compilado (gerado a partir de src/scss/main.scss) -->
+  <link rel="stylesheet" href="src/scss/main.min.css" />
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <img src="src/img/logos-agrada-1.png" alt="Logo Agrada Digital" class="header-logo" />
+
+    <form class="search-form" role="search">
+      <input type="search" class="search-input" placeholder="O que você procura?" aria-label="Buscar produto" />
+      <button type="submit" class="search-btn">Buscar</button>
+    </form>
+
+    <nav class="header-actions" aria-label="Ações do usuário">
+
+      <!-- Login com dropdown -->
+      <div class="nav-dropdown" id="dropdown-login">
+        <button class="action-link action-btn" aria-expanded="false">
+         <img src="src/img/ÍCONE%20LOGIN.svg" alt="Ícone de login" />
+          <span>Faça login</span>
+        </button>
+        <div class="dropdown-box dropdown-login-box">
+          <a href="#" class="dropdown-btn btn-green">Faça o login</a>
+          <span class="dropdown-or">Ou</span>
+          <a href="#" class="dropdown-btn btn-black">Cadastre-se</a>
+        </div>
+      </div>
+
+      <!-- Atendimento com dropdown -->
+      <div class="nav-dropdown" id="dropdown-atendimento">
+        <button class="action-link action-btn" aria-expanded="false">
+          <img src="src/img/ÍCONE%20ATENDIMENTO.svg" alt="Ícone de atendimento" />
+          <span>Atendimento</span>
+        </button>
+        <div class="dropdown-box dropdown-atendimento-box">
+          <p class="atendimento-text">Somos os verdadeiros especialistas em e-commerce</p>
+          <a href="tel:+5551980272522" class="dropdown-btn btn-green">(51) 980.272.522</a>
+        </div>
+      </div>
+
+      <!-- Carrinho -->
+      <a href="#" class="action-link cart-link">
+        <span class="cart-badge">0</span>
+       <img src="src/img/ÍCONE%20CARRINHO.svg" alt="Ícone de carrinho" />
+        <span>Carrinho</span>
+      </a>
+    </nav>
+
+    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" aria-hidden="true">
+    <div class="mobile-search">
+      <input type="search" placeholder="O que você procura?" />
+      <button class="search-btn">Buscar</button>
+    </div>
+    <a href="#" class="mobile-action-link">Faça login</a>
+    <a href="#" class="mobile-action-link">Cadastre-se</a>
+    <a href="#" class="mobile-action-link">Atendimento — (51) 980.272.522</a>
+    <a href="#" class="mobile-action-link">Carrinho (2)</a>
+  </div>
+</header>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" style="background-image: url('src/img/FULLBANNER-1.png');">
+    <div class="hero-content"/>
+  </section>
+
+  <!-- ==================== VITRINE 1 (apenas esta no HTML) ==================== -->
+  <section class="vitrine-section">
+    <div class="container">
+      <h2 class="vitrine-title">Vitrine de produtos da Agrada Digital</h2>
+     <div class="vitrine-container">
+        <div class="vitrine-carousel" id="vitrine-carousel">
+          <!-- Produtos renderizados via JS a partir de produtos.json -->
+        </div>
+      </div>
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ==================== BANNER DUPLO ==================== -->
+  <div class="banner-duo">
+    <div class="banner-duo-item">
+      <img src="src/img/banner-templates.png" alt="E-commerce em ação" />
+    </div>
+    <div class="banner-duo-item">
+      <img src="src/img/banner-servicos%20(1)%402x.png" alt="Loja virtual profissional" />
+    </div>
+  </div>
+
+  <!-- Segunda vitrine é inserida aqui via JS (clone da primeira) -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-top-inner">
+        <img src="src/img/logos-agrada.png" alt="Logo Agrada Digital" class="footer-logo" />
+        <p class="footer-desc">
+          A Agrada conta com uma equipe de profissionais com mais de 10 anos de experiência no mercado
+          de e-commerce, e tem como objetivo desmistificar e simplificar a relação entre o cliente e a
+          agência. Aqui não falamos em "budget", não temos "head of experience", nem "CEO". Entendemos
+          que o processo de um projeto de e-commerce já é complexo o suficiente, não precisamos
+          complicá-lo ainda mais. Buscamos uma relação simples, preto no branco, da forma que deve ser.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p class="footer-payment-label">Pagamento</p>
+        <div class="payment-icons">
+           <img src="src/img/ICONES.svg" alt="Logo Cartões de crédito" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL ==================== -->
+  <div id="modal-carrinho" role="dialog" aria-modal="true" aria-label="Produto adicionado ao carrinho">
+    <div class="modal-box">
+      <div class="modal-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5" aria-hidden="true">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <p class="modal-text">Produto adicionado ao carrinho!</p>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Slick Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- Main JS -->
+  <script src="src/js/main.js"></script>
+</body>
+</html>
